@@ -1,0 +1,26 @@
+pydantic
+langchain
+langgraph
+langchain-core
+langchain-community
+langchain-experimental
+langchain-mcp-adapters
+langchain_openai
+langchain-google-genai
+fastapi
+streamlit
+uvicorn
+httpx
+requests
+langchain_google_community
+mcp
+tavily-python
+python-dotenv
+langchain-groq
+langchain-openai
+langsmith
+arxiv
+wikipedia
+langgraph-cli[inmem]
+
+-e .
