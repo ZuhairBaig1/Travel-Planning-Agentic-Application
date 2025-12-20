@@ -75,16 +75,6 @@ LLM and provider configuration is managed via the following file:
 
 config/config.yaml
 
-Example configuration:
-
-llm:
-  groq:
-    provider: "groq"
-    model_name: "openai/gpt-oss-120b"
-  gemini:
-    provider: "google"
-    model_name: "gemini-2.5-pro"
-
 The application supports multiple LLM providers. You can switch between them by specifying the model_provider parameter when initializing the agent workflow.
 
 Example usage:
