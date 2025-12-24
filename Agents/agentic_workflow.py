@@ -11,8 +11,8 @@ from langgraph.prebuilt import ToolNode, tools_condition
 
 
 class GraphBuilder():
-    def __init__(self,model_provider: str = "gemini"):
-        self.model_loader = ModelLoader(model_provider=model_provider)
+    def __init__(self):
+        self.model_loader = ModelLoader()
         self.llm = self.model_loader.load_llm()
         self.tools = []
         self.weather_tool = WeatherInfoTool()
