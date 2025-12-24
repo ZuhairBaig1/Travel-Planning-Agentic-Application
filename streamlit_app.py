@@ -1,10 +1,8 @@
 import streamlit as st
 from utils.save_to_document import save_document
-import datetime
 import requests
-import sys
 
-BASE_URL = "http://localhost:8000" # backend endpoint
+BASE_URL = "https://travel-planning-agentic-application.onrender.com" # backend endpoint
 
 st.set_page_config(
     page_title="🎆 Travel Planning Agentic Application",
