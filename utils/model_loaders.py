@@ -18,7 +18,7 @@ class ConfigLoader:                         # loading dependencies from config.y
     
 
 class ModelLoader(BaseModel):
-    model_provider: Literal["groq", "gemini"] = "groq"
+    model_provider: Literal["groq", "gemini"] = "gemini"
     config: Optional[ConfigLoader] = Field(default=None, exclude=True)
 
     def model_post_init(self, __context: Any)-> None:  # This is a specific name reserved by Pydantic. Pydantic promises to call this method automatically after it finishes creating and validating your object, using thid means parent class's (BaseModel) __init__ is not overwritten

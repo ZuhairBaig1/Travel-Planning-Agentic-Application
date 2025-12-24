@@ -36,3 +36,5 @@ class PlaceSearchTool:
             return f"Following are the transportation in {place} as suggested by tavily:" + "\n".join(tavily_result)
         
         return [search_attractions,search_restaurants,search_activities,search_transportation]
+    
+    
