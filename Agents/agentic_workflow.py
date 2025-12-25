@@ -68,7 +68,10 @@ class GraphBuilder():
         graph_builder.add_node("tools",ToolNode(tools=self.tools))
         graph_builder.add_node("reflection_agent",self.reflection_agent)
         graph_builder.add_edge(START,"agent")
-        graph_builder.add_conditional_edges("agent",tools_condition)
+        graph_builder.add_conditional_edges("agent",tools_condition, {
+        "tools": "tools",
+        "end": "reflection_agent"
+    })
         graph_builder.add_edge("tools","agent")
         graph_builder.add_edge("agent","reflection_agent")
         graph_builder.add_edge("reflection_agent",END)
