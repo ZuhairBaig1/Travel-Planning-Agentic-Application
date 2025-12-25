@@ -24,8 +24,10 @@ async def query_travel_agent(query:QueryRequest):
         
         print(f"Graph saved as 'my_graph.png' in {os.getcwd()}")
 
-        messages = {"messages":[query.query]}    # query.query ?
-        output = react_app.invoke(messages)
+        config = {"recursion_limit": 100}
+
+        messages = {"messages":[query.query]}  
+        output = react_app.invoke(messages, config=config)
         
         final_output = extract_text_from_message(output['messages'][-1].content)
 
