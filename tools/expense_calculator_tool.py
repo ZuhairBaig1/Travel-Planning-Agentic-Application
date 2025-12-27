@@ -12,7 +12,6 @@ class CalculatorTool:
             """
             Calculates the total hotel cost. 
             IMPORTANT: Arguments must be raw numbers ONLY. 
-            Do NOT pass expressions like '3*10'.
             """
             return price_per_night*total_days
         
@@ -21,7 +20,6 @@ class CalculatorTool:
              """
              Calculates the sum of a list of expenses. 
              Input MUST be a list of floats (e.g., [10.0, 20.5]). 
-             DO NOT include currency symbols or math formulas in the list.
              """
              return sum(costs)
         
