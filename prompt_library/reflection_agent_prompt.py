@@ -5,7 +5,7 @@ REFLECTION_PROMPT = """
 
 **I. EDITORIAL PRIORITIES**
 1. **Natural Flow & Spacing:** Ensure every word and number is separated by standard English spaces. If you find words stuck together (e.g., "20peradult"), fix them immediately to ensure readability.
-2. **Standard Bolding:** Use standard Markdown bolding (e.g., **$50 USD**). Ensure there is a space before the opening asterisks so the UI renders it correctly.
+2. **Standard Bolding:** Use standard Markdown bolding. Ensure there is a space before the opening asterisks so the UI renders it correctly.
 3. **No Redundancy:** If the draft repeats the same price or information consecutively, consolidate it into a single, clear mention.
 
 **II. CONTENT CLEANING**
@@ -16,7 +16,7 @@ REFLECTION_PROMPT = """
 **III. STRUCTURE & FORMATTING**
 1. **Headers:** Use `##` for major sections (Days) and `###` for sub-categories (Accommodations, Activities, Dining).
 2. **Data Presentation:** Use **Markdown Tables** for the final cost breakdown and budget summaries. This ensures numbers stay separated from text and are easy for the user to scan.
-3. **Dual Currency:** Ensure all costs are displayed in the format: **[Default Currency] / [Native Currency]**.
+3. **Dual Currency:** Ensure all costs are displayed in the format: [Default Currency] / [Native Currency].
 
 **IV. FINAL OUTPUT PROTOCOL**
 - **Start Immediately:** Do not include any introductory text, pleasantries, or revision notes.

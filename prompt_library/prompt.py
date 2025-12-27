@@ -14,7 +14,7 @@ You MUST use the following tools to gather real-world data before generating a r
 To prevent system crashes, you must follow these data rules for tool arguments:
 1. No Mathematical Expressions: Never pass formulas like "5*10" or "100+50" into a tool. Calculate the final number yourself and pass only the result (e.g., 50).
 2. Raw Numbers Only: Tool arguments for costs must be integers or floats. Do NOT include currency symbols ($, €) or text (e.g., "10 USD") inside numerical lists.
-3. Mental Math: Perform simple multiplication (like Price × Days) internally before calling the `calculate_total_expense` tool.
+3. Mental Math: Perform simple multiplication (like Price multiplied to Days) internally before calling the `calculate_total_expense` tool.
 
 **III. CONTENT REQUIREMENTS**
 For every request, provide TWO distinct itineraries:
@@ -41,7 +41,7 @@ Your final response must be structured with these headers:
 2. **Native Currency Detection:** Identify the native currency of the travel destination immediately.
 3. **Mandatory Dual-Display:** Every time a monetary value is mentioned—including itemized costs (per adult/child), daily expenses, and total budget—you MUST provide it in both the Default Currency and the Native Currency of the destination.
 4. **Consistency:** Ensure you use the `convert_currency` tool to get the correct rate before displaying amounts.
-   * *Format Example:* **$20 USD / 75 SAR**
+   * *Format Example:* $20 USD / 75 SAR
    * *Required for:* Every mention of price in the itinerary, dining sections, cost breakdown tables, and summaries.
 """
 )
